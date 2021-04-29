@@ -1,0 +1,564 @@
+#packmen
+{
+   display: none;
+
+}
+#outer{
+  background-image: linear-gradient(to right, rgb(252, 236, 19), rgb(255, 0, 21));
+}
+
+.menu{
+  position: relative;
+  margin-left: 35%;
+  list-style-type: none;
+  }
+
+.menu a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  text-decoration: none;
+  font-size: 1.5vw;
+  float: left;
+  border-right:1px solid #bbb;
+  cursor: pointer;
+  font-family: 'Dancing Script', cursive;
+
+    
+}
+
+.menu a:hover{
+  background-color: rgb(120, 128, 104);
+}
+
+html {
+  height: 100%;
+  margin: auto;
+  width: 60vw;
+
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2
+}
+
+#Game_setting {
+	position: center;
+	background-image: url('resource\\setting.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: lightskyblue;
+	display: flex;
+
+  }
+
+
+#welcome
+{
+
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+#Game_setting{
+	display: none;
+  color: #716fdb;
+  font-size: 17px;
+ 
+ }
+
+center{
+	margin-left: 50%;
+	margin-top: 50%;
+}
+body{
+  margin:0;
+  height: 100%;
+  min-width: 100%;
+  
+}
+body {
+	position: center;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+@supports (display: grid) {
+  body {
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+
+  }
+  .container{
+
+		width: 200px;
+		margin: 0 auto;
+		display: inline;
+
+  }
+}
+
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans);*/
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.btn:hover { color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { background-color: #4a77d4; background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4)); background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4); background-image: -o-linear-gradient(top, #6eb6de, #4a77d4); background-image: linear-gradient(top, #6eb6de, #4a77d4); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);  border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #4a77d4; }
+.btn-block { width: 100%; display:block; }
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; }
+
+#register { 
+  display: none;
+}
+
+
+#body_loggin { 
+  display: none;
+  width: 100%;
+  height:100%;
+  font-family: 'Open Sans', sans-serif;
+  background: #092756;
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+
+ .login { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  width:300px;
+  height:300px;
+}
+ .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+ input { 
+  width: 100%; 
+  margin-bottom: 10px; 
+  background: rgba(0,0,0,0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+}
+ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+ /* Import Pretty Checkboxes*/
+@import "https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css";
+/* Import Varela Round from Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+/*Variables defined*/
+:root {
+  --main-color: coral;
+  --text-color: #444;
+  --formcolor: white;
+  --button-color: hsl(356, 90%, 64%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { /* html is full screen. */
+  height: 100%;
+}
+
+login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: 'Varela Round', sans-serif; /* Very similar font to Helvetica Round.*/
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-image: url("resource\\pacmen2.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size:100% 100%; /* Don't repeat gradient in landscape mode on mobile phones*/
+  background-attachment: fixed;
+}
+
+.title {
+  padding: 10px 0px;
+  border-bottom: 4px solid;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: antiquewhite;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+input[type="submit"] {
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  border: 2px outset var(--button-color);
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: transparent;
+  transition: all 0.2s ease-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--button-color, black);
+  color: var(--formcolor);
+  transition-duration: 0.4s;
+}
+
+.input-field {
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0.8rem 1.2rem;
+  margin: 0.3rem 0;
+  background-color: #f0f0f0;
+}
+
+label {
+  display: block;
+  font-family: 'Dancing Script', cursive;
+  color:black;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: antiquewhite;
+
+}
+
+form {
+  padding: 20px;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 4px;
+}
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+form button {
+  height: 30px;
+  line-height: 30px;
+  background: #e67e22;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+form .error {
+  color: #ff0000;
+}
+
+.article-reference {
+  margin-top: 15px;
+}
+.article-reference a {
+  color: #e67e22;
+}
+
+label{
+  margin: 5% auto;
+}
+
+.side_windows{
+  display: absolute;
+  height: 40px;
+  margin-left: 0px;
+}
+
+#canvas{
+  margin-left: 5%;
+  background: black
+}
+
+#score{
+  margin-top: 5%;
+}
+
+#game{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;  
+  font-family: 'Open Sans', sans-serif;
+}
+  #game_bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    height: 65px;
+  }
+
+  input{
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    background: #e67e22;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    cursor: pointer;
+
+  }
+
+  #about {
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;  
+
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    font-family: 'Dancing Script', cursive;
+  }
+
+  #model{
+    background-image: url('resource\\board.jpg');
+    position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: lightskyblue;
+    display: flex;
+
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  #closeButton{
+    font-size: 36px;
+    float: right;
+    font-weight: bold;
+  
+  }
+  
+  #closeButton:hover,#closeButton:focus{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  
+  }
+
